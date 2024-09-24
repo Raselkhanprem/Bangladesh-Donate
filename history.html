@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+        <!-- This is our header -->
+    <header>
+        <section class="bg-[#F9F7F3]">
+            <div class="navbar flex justify-center lg:gap-x-80 sm:gap-20 p-3">
+                <div>
+                    <a href="blog.html">
+                        <button class="py-3 px-8 bg-[#B4F461] hover:bg-[#FFF] hover:border-2-slate-500 rounded-lg font-semibold">Blog</button>
+                    </a>
+                </div>
+    
+                <div class="mt-3">
+
+                    <a class="flex gap-3" href="index.html">
+                        <img class="h-7 w-7" src="images/logo.png" alt="">
+                        <p class="font-semibold">Donate Bangladesh</p>
+                    </a>
+                        
+                </div>
+    
+                <div class="flex gap-3 mt-3">
+                    <img class="h-7 w-7" src="images/coin.png" alt="">
+                    <p>5500 BDT</p>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- This is our button section -->
+        <section>
+            <div class="buttons flex justify-center lg:gap-x-10 sm:gap-x-5 pt-10 pb-8 ">
+                <div>
+                    <a href="index.html">
+                        <button class="py-3 px-8 bg-[#B4F461] hover:bg-[#FFF] hover:border-2 rounded-lg font-semibold">Donation</button>
+                    </a>
+                </div>
+    
+                <div>
+                    <a href="history.html">
+                        <button class="py-3 px-8 bg-[#B4F461] hover:bg-[#FFF] hover:border-2 rounded-lg font-semibold">History</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section (Initially hidden) -->
+
+        <section id="history-section" class="hidden"">
+
+            <h2>Transaction History</h2>
+            <ul id="history-list"></ul>
+
+        </section>
+
+    </main>
+
+    <!-- this tis footer section -->
+    <footer class="bg-[#F9F7F3] h-24"></footer>
+
+    
+    <script src="history.js"></script>
+    
+</body>
+</html>
